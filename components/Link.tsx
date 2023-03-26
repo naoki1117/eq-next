@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Link = () => {
   return (
-    <div className="bg-slate-400 h-1/4">
+    <div className="h-1/4 border-l-slate-300">
       frsrg
     </div>
   )

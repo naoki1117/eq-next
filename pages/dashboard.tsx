@@ -29,7 +29,7 @@ const Dashboard:NextPage = () => {
         />
         <UserInfo/>
         <Header/>
-        <div className='flex space-x-32 h-full'>
+        <div className='flex h-full'>
           <EqForm/>
           <EqList/>
           <Link/>
