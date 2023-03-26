@@ -16,7 +16,7 @@ const Information :NextPage = () => {
             <li>mantine ui</li>
             <li>reactQuery</li>
             <li>zustand</li>
-            <li>zand more...</li>
+            <li>and more...</li>
         </ul>
         <br />
         <h2>バックエンド</h2>
@@ -30,7 +30,7 @@ const Information :NextPage = () => {
         <h2>サーバー</h2>
         <ul>
             <li>webサーバ⇒vercel</li>
-            <li>application⇒heroku</li>
+            <li>applicationサーバ⇒heroku</li>
             <li>DB⇒postgresql</li>
         </ul>
         <Footer/>
