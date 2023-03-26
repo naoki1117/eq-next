@@ -52,10 +52,12 @@ export const EqForm = () => {
 
         />
         <TextInput
-            label="*必須項目(数量)"
+            label="必須項目(数量)"
             value={editedEq.quantity || ""}
             placeholder="数量を入力"
+            
             onChange={(e) => update({...editedEq,quantity: e.target.value})}
+            
         />
         <TextInput
             className='w-64'

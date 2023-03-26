@@ -8,6 +8,8 @@ import { UserInfo } from '../components/UserInfo'
 import { useQueryClient } from '@tanstack/react-query'
 import { EqForm } from '../components/EqForm'
 import { EqList } from '../components/EqList'
+import { Header } from '../components/Header'
+import { Footer } from '../components/Footer'
 
 const Dashboard:NextPage = () => {
     const router = useRouter()
@@ -25,11 +27,12 @@ const Dashboard:NextPage = () => {
             onClick={logout}
         />
         <UserInfo/>
-        <div className='h-[20px] mt-10 bg-indigo-500'></div>
+        <Header/>
         <div className='flex space-x-32'>
           <EqForm/>
           <EqList/>
         </div>
+        <Footer/>
     </Layout>
   )
 }
