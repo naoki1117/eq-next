@@ -8,7 +8,7 @@ export const useQueryUser = () => {
   const router = useRouter()
   const getUser = async () => {
     const { data } = await axios.get<Omit<User, 'hashedPassword'>>(
-      `${process.env.NEXT_PUBLIC_API_URL}/user`
+      `${process.env.NEXT_PUBLIC_API_URL}user`
     )
     return data
   }
