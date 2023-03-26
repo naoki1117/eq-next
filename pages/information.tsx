@@ -2,7 +2,7 @@ import { NextPage } from 'next'
 import React from 'react'
 import { Layout } from '../components/Layout'
 
-export const information :NextPage = () => {
+const Information :NextPage = () => {
   return (
     <Layout title='information'>
       <h1>アーキテクチャー</h1>
@@ -33,4 +33,6 @@ export const information :NextPage = () => {
     </Layout>
   )
 }
+
+export default Information
 
