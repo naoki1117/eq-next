@@ -8,11 +8,11 @@ export const EqList = () => {
     const {data: eqs, status} =useQueryEqs()
     if (status === "loading") return <Loader my="lg" color="cyan"/>
   return (
-    <div className='col-span-2'>
+    <div className='col-span-3'>
         <List
             my="lg"
             spacing="sm"
-            size="sm"
+            size="md"
             icon={
                 <ThemeIcon color="cyan">
                     <IconCircleDashed size={16}/>

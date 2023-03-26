@@ -29,7 +29,7 @@ const Dashboard:NextPage = () => {
         />
         <UserInfo/>
         <Header/>
-        <div className='grid grid-cols-4 h-full'>
+        <div className='grid grid-cols-5 gap-4 h-full'>
           <EqForm/>
           <EqList/>
           <Link/>
