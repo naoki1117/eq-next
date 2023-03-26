@@ -10,6 +10,7 @@ import { EqForm } from '../components/EqForm'
 import { EqList } from '../components/EqList'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
+import { Link } from '../components/Link'
 
 const Dashboard:NextPage = () => {
     const router = useRouter()
@@ -28,9 +29,10 @@ const Dashboard:NextPage = () => {
         />
         <UserInfo/>
         <Header/>
-        <div className='flex space-x-32'>
+        <div className='flex space-x-32 h-full'>
           <EqForm/>
           <EqList/>
+          <Link/>
         </div>
         <Footer/>
     </Layout>
