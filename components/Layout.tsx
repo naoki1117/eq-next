@@ -11,7 +11,6 @@ export const Layout: FC<Props> = ({children,title="NextPage"}) => {
         <Head>
             <title>{title}</title>
         </Head>
-        <p className="fixed left-0 top-0">備品管理システム</p>
         <main className=" w-screen">
             {children}
         </main>
