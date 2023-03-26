@@ -30,7 +30,7 @@ export const EqForm = () => {
     }
     
     return (
-    <div className='w-1/4'>
+    <div className='basis-1/4'>
       <form onSubmit={handleSubmit} className="mt-[10px]">
         <div className='bg-red-600 text-white text-center w-64'>xxx登録、更新フォームxxx</div>
         <TextInput
@@ -55,7 +55,7 @@ export const EqForm = () => {
             label="必須項目(数量)"
             value={editedEq.quantity || ""}
             placeholder="数量を入力"
-            
+            className='w-64'
             onChange={(e) => update({...editedEq,quantity: e.target.value})}
             
         />
