@@ -56,7 +56,7 @@ const Home:NextPage = () => {
     }
   }
   return (
-    <AuthLayout title="Auth">
+    <AuthLayout title="eqms">
         <IconAccessPoint className="h-16 w-16 text-blue-500 " />
         {error && (
           <Alert
