@@ -8,7 +8,7 @@ export const EqList = () => {
     const {data: eqs, status} =useQueryEqs()
     if (status === "loading") return <Loader my="lg" color="cyan"/>
   return (
-    <div className='col-span-3'>
+    <div className='col-span-2'>
         <List
             my="lg"
             spacing="sm"
