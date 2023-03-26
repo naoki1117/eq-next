@@ -30,7 +30,7 @@ export const EqForm = () => {
     }
     
     return (
-    <>
+    <div className='w-1/4'>
       <form onSubmit={handleSubmit} className="mt-[10px]">
         <div className='bg-red-600 text-white text-center w-64'>xxx登録、更新フォームxxx</div>
         <TextInput
@@ -79,7 +79,7 @@ export const EqForm = () => {
         </Button>
       
       </form>
-    </>
+    </div>
   )
 }
 
