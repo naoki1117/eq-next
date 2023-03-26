@@ -10,7 +10,6 @@ import { EqForm } from '../components/EqForm'
 import { EqList } from '../components/EqList'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
-import { Link } from '../components/Link'
 
 const Dashboard:NextPage = () => {
     const router = useRouter()
@@ -32,7 +31,6 @@ const Dashboard:NextPage = () => {
         <div className='grid grid-cols-4 gap-4 h-full'>
           <EqForm/>
           <EqList/>
-          <Link/>
         </div>
         <Footer/>
     </Layout>

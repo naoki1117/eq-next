@@ -4,7 +4,7 @@ import React from 'react'
 export const Link = () => {
   return (
     <div className="col-span-1 border-1-double">
-        <Title order={3} align="center">外部リンク</Title>
+        <Title order={4}>外部リンク</Title>
       <a href="https://realtime-remind.vercel.app/" className='no-underline text-gray-500'>remindapp</a>
     </div>
   )
