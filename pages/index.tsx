@@ -39,7 +39,7 @@ const Home:NextPage = () => {
   const handleSubmit = async () => {
     try {
       if(isRegister) {
-        await axios.post(`${process.env.NEXT_PUBLIC_API_URL}auth/signup`, {
+        await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/auth/signup`, {
           email: form.values.email,
           password: form.values.password
         })
