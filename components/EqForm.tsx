@@ -69,7 +69,7 @@ export const EqForm = () => {
         />
         <Button
             className='ml-24'
-            disabled={editedEq.name === "" || editedEq.category === ""  }
+            disabled={editedEq.name === "" || editedEq.category === "" || editedEq.quantity === ""  }
             leftIcon={<IconDatabase size={14}/>}
             color="cyan"
             type='submit'
