@@ -30,12 +30,19 @@ export const EqItem:FC<Omit<Equipment, "userId">> = ({id,name,category,descripti
         <TrashIcon
             className='h-5 w-5 cursor-pointer text-blue-500'
             onClick={() => {
-                deleteEqMutation.mutate(id)
+                const res = confirm("削除してよろしいですか?")
+                if (res == true){
+                    deleteEqMutation.mutate(id)
+                    alert("削除が完了しました。")
+                }
+                else {
+                    alert("キャンセルされました。")
+                }
             }}
         />
       </div>
       <span onClick={() => setToggle(!toggle)} className="cursor-pointer">
-        {name} &emsp; 数量:{quantity}{description}
+        <strong>{name}</strong> &emsp; 数量:{quantity}{description}
         <p>所在フロア:{category}</p>
         <p>
             登録日:{format(new Date(createdAt),"yyyy-MM-dd HH:mm:ss")}

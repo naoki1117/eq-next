@@ -11,13 +11,15 @@ export const EqForm = () => {
     const {createEqMutation,updateEqMutation} = useMutateEq()
     const handleSubmit = (e:FormEvent<HTMLFormElement>) => {
         e.preventDefault()
-        if (editedEq.id === 0)
+        if (editedEq.id === 0){
             createEqMutation.mutate({
                 name: editedEq.name,
                 category: editedEq.category,
                 description: editedEq.description,
                 quantity: editedEq.quantity
             })
+            alert("作成が完了しました。")
+        }
         else {
             updateEqMutation.mutate({
                 id:editedEq.id,
@@ -26,6 +28,7 @@ export const EqForm = () => {
                 description:editedEq.description,
                 quantity: editedEq.quantity
             })
+            alert("更新が完了しました。")
         }
     }
     
