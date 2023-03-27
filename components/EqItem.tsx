@@ -33,7 +33,6 @@ export const EqItem:FC<Omit<Equipment, "userId">> = ({id,name,category,descripti
                 const res = confirm("削除してよろしいですか?")
                 if (res == true){
                     deleteEqMutation.mutate(id)
-                    alert("削除が完了しました。")
                 }
                 else {
                     alert("キャンセルされました。")

@@ -18,7 +18,6 @@ export const EqForm = () => {
                 description: editedEq.description,
                 quantity: editedEq.quantity
             })
-            alert("作成が完了しました。")
         }
         else {
             updateEqMutation.mutate({

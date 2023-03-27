@@ -25,6 +25,7 @@ export const useMutateEq = () => {
           queryClient.setQueryData(['eqs'], [res, ...previousEqs])
         }
         reset()
+        alert('作成が完了しました。')
       },
       onError: (err: any) => {
         reset()
@@ -75,6 +76,7 @@ export const useMutateEq = () => {
           )
         }
         reset()
+        alert('削除が完了しました。')
       },
       onError: (err: any) => {
         reset()
