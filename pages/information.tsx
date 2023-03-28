@@ -8,8 +8,8 @@ const Information :NextPage = () => {
   return (
     <Layout title='information'>
         <Header/>
-        <h1 className='inline'>アーキテクチャー</h1>
-        <h2 className='border-b-2 border-red-300'>フロントエンド</h2>
+        <h1 className=''>アーキテクチャー</h1>
+        <h2 className='inline border-b-2'>フロントエンド</h2>
         <ul>
             <li>nextjs&typescript</li>
             <li>tailwindcss</li>
