@@ -16,7 +16,7 @@ export const Cloudinaries = () => {
 
     // Render the image in a React component.
     return (
-      <div>
+      <div className='col-span-1'>
         <AdvancedImage cldImg={myImage} />
       </div>
     )
