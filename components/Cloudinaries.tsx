@@ -9,7 +9,7 @@ export const Cloudinaries = () => {
           cloudName: 'hq7g6wuwh'
       }
       });
-    const myImage = cld.image('docs/models'); 
+    const myImage = cld.image('p_crwtbg'); 
 
     // Resize to 250 x 250 pixels using the 'fill' crop mode.
     myImage.resize(fill().width(250).height(250));
