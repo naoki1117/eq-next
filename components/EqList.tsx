@@ -3,7 +3,7 @@ import { useQueryEqs } from '../hooks/useQueryEqs'
 import { List,ThemeIcon,Loader } from '@mantine/core'
 import { IconCircleDashed } from '@tabler/icons'
 import {EqItem} from "./EqItem"
-import { TagIcon } from '@heroicons/react/solid'
+import { AugmentedReality } from 'tabler-icons-react';
 
 export const EqList = () => {
     const {data: eqs, status} =useQueryEqs()
@@ -15,7 +15,12 @@ export const EqList = () => {
             spacing="sm"
             size="md"
             icon={
-                <TagIcon fontSize={16} color='cyan'/> 
+                <AugmentedReality
+                    size={30}
+                    strokeWidth={2}
+                    color={'#40a4bf'}
+                 />
+                
             }
         >
             {eqs?.map((eq) => (

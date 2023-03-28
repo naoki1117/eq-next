@@ -1,6 +1,8 @@
 import React from 'react'
 import ExcelJS from "exceljs"
 import { useQueryEqs } from '../hooks/useQueryEqs';
+import { FileExport } from 'tabler-icons-react';
+import { Button } from '@mantine/core';
 
 export const OutPut = () => {
     const {data: eqs, status} =useQueryEqs()
@@ -59,9 +61,13 @@ export const OutPut = () => {
       }
   return (
     <div className='mt-5'>
-        <button onClick={(e) => handlerClickDownloadButton(e, "xlsx")}>
+        <Button variant="outline" color="dark" leftIcon={<FileExport
+          size={30}
+          strokeWidth={3}
+          color={'#2d5086'}
+        />} onClick={(e) => handlerClickDownloadButton(e, "xlsx")}>
           Excelダウンロード
-        </button>
+        </Button>
     </div>
   )
 }
