@@ -8,7 +8,7 @@ export const Header = () => {
         <Link href="/information">
             <InformationCircleIcon className='h-5 w-5 cursor-pointer'/>
         </Link>
-        <div className='h-[20px] bg-indigo-500'></div>
+        <div className='h-[20px] bg-indigo-500 mt-1'></div>
     </>
   )
 }
