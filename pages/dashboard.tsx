@@ -24,11 +24,13 @@ const Dashboard:NextPage = () => {
     }
     const [toggle,setToggle] = useState(false)
   return (
-    <Layout title='備品管理コンソール'>
-        <LogoutIcon
-            className='mb-6 h-6 w-6 cursor-pointer text-blue-500 fixed top-0 left-1/2'
+    <Layout title='eqms'>
+        <Button
             onClick={logout}
-        />
+            className="text-end"
+            >
+              ログアウト
+        </Button>
         <UserInfo/>
         <Header/>
         <div className='grid grid-cols-4 gap-4 h-full'>

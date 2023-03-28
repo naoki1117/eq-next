@@ -8,7 +8,6 @@ export const Header = () => {
         <Link href="/information">
             <InformationCircleIcon className='h-5 w-5 cursor-pointer'/>
         </Link>
-        <p className="m-0">備品管理システム</p>
         <div className='h-[20px] bg-indigo-500'></div>
     </>
   )
