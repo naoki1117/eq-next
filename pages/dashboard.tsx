@@ -10,7 +10,7 @@ import { EqForm } from '../components/EqForm'
 import { EqList } from '../components/EqList'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
-import { Cloudinary } from '../components/Cloudinary'
+import { Cloudinaries } from '../components/Cloudinaries'
 
 const Dashboard:NextPage = () => {
     const router = useRouter()
@@ -32,7 +32,7 @@ const Dashboard:NextPage = () => {
         <div className='grid grid-cols-5 gap-4 h-full'>
           <EqForm/>
           <EqList/>
-          <Cloudinary/>
+          <Cloudinaries/>
         </div>
         <Footer/>
     </Layout>
