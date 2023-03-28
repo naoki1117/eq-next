@@ -18,23 +18,10 @@ export const OutPut = () => {
           { header: "作成日時", key: "createdAt" },
           { header: "名前", key: "name" }
         ];
-    
+        
+        
         worksheet.addRows([
-          {
-            id: "f001",
-            createdAt: 1629902208,
-            name: "りんご"
-          },
-          {
-            id: "f002",
-            createdAt: 1629902245,
-            name: "ぶとう"
-          },
-          {
-            id: "f003",
-            createdAt: 1629902265,
-            name: "ばなな"
-          }
+            eqs
         ]);
     
         const uint8Array =
@@ -52,10 +39,7 @@ export const OutPut = () => {
   return (
     <div>
         <button onClick={(e) => handlerClickDownloadButton(e, "xlsx")}>
-          Excel形式
-        </button>
-        <button onClick={(e) => handlerClickDownloadButton(e, "csv")}>
-            CSV形式
+          Excelダウンロード
         </button>
     </div>
   )
