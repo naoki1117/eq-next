@@ -71,7 +71,7 @@ export const EqForm = () => {
             onChange={(e) => update({...editedEq,description: e.target.value})}
         />
         <Button
-            className='ml-24'
+            className='ml-24 mt-2'
             disabled={editedEq.name === "" || editedEq.category === "" || editedEq.quantity === ""  }
             leftIcon={<IconDatabase size={14}/>}
             color="cyan"

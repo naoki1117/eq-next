@@ -28,7 +28,7 @@ const Dashboard:NextPage = () => {
         <Button
         size='xs'
             onClick={logout}
-            className="fixed top-0 left-5 cursor-pointer"
+            className="fixed top-0 left-5 cursor-pointer z-10"
             >
               ログアウト
         </Button>
