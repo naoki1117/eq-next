@@ -4,6 +4,7 @@ import { useQueryEqs } from '../hooks/useQueryEqs';
 
 export const OutPut = () => {
     const {data: eqs, status} =useQueryEqs()
+    
     const handlerClickDownloadButton = async (
         e: React.MouseEvent<HTMLButtonElement, MouseEvent>,
         format: "xlsx" | "csv"
@@ -15,14 +16,23 @@ export const OutPut = () => {
         console.log(eqs)
         worksheet.columns = [
           { header: "ID", key: "id" },
-          { header: "作成日時", key: "createdAt" },
-          { header: "名前", key: "name" }
+          { header: "名称", key: "name" },
+          { header: "作成日時", key: "createdAt" }
         ];
         
         
-        worksheet.addRows([
-            eqs
-        ]);
+        
+        eqs?.map((eq) => {
+            worksheet.addRows([
+                {
+                    id:eq.id,
+                    name:eq.name,
+                    createdAt:eq.createdAt
+                }
+
+            ]);
+            
+        })
     
         const uint8Array =
           format === "xlsx"
