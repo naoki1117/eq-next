@@ -1,5 +1,5 @@
 import { NextPage } from 'next'
-import React from 'react'
+import React, { useState } from 'react'
 import { Layout } from '../components/Layout'
 import {useRouter} from "next/router"
 import axios from 'axios'
@@ -11,6 +11,7 @@ import { EqList } from '../components/EqList'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 import { Cloudinaries } from '../components/Cloudinaries'
+import { Button } from '@mantine/core'
 
 const Dashboard:NextPage = () => {
     const router = useRouter()
@@ -21,6 +22,7 @@ const Dashboard:NextPage = () => {
         await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/auth/logout`)
         router.push("/")        
     }
+    const [toggle,setToggle] = useState(false)
   return (
     <Layout title='備品管理コンソール'>
         <LogoutIcon
@@ -29,11 +31,17 @@ const Dashboard:NextPage = () => {
         />
         <UserInfo/>
         <Header/>
-        <div className='grid grid-cols-5 gap-4 h-full'>
+        <div className='grid grid-cols-4 gap-4 h-full'>
           <EqForm/>
           <EqList/>
-          <Cloudinaries/>
         </div>
+        <Button
+        onClick={() => setToggle(!toggle)}
+        >
+          開/閉
+        </Button>
+        {toggle ? <Cloudinaries toggle={toggle} setToggle={setToggle}/> : <p>マップを表示するには上のボタンを押下してください。</p>}
+        
         <Footer/>
     </Layout>
   )
