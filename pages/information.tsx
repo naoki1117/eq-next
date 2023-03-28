@@ -9,7 +9,7 @@ const Information :NextPage = () => {
     <Layout title='information'>
         <Header/>
         <h1>アーキテクチャー</h1>
-        <h2 className='relative after:bottom-[-10px] after:h-[2px] after:bg-yellow-200 after:w-3/4 after:left-0'>フロントエンド</h2>
+        <h2 className='relative after:bottom-[-10px] after:absolute after:h-[2px] after:bg-yellow-200 after:w-3/4 after:left-0'>フロントエンド</h2>
         <ul>
             <li>nextjs&typescript</li>
             <li>tailwindcss</li>
