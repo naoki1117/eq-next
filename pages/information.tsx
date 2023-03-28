@@ -10,6 +10,7 @@ const Information :NextPage = () => {
         <Header/>
         <h1>アーキテクチャー</h1>
         <h2 className='relative after:absolute after:inline-block after:content-none after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-yellow-600'>フロントエンド</h2>
+        <div className='absolute h-[2px] w-3/4 bg-red-400 bottom-[-10]'></div>
         <ul>
             <li>nextjs&typescript</li>
             <li>tailwindcss</li>
