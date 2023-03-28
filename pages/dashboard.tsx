@@ -35,12 +35,12 @@ const Dashboard:NextPage = () => {
           <EqForm/>
           <EqList/>
         </div>
-        <Button
+        {/* <Button
         onClick={() => setToggle(!toggle)}
         >
           開/閉
         </Button>
-        {toggle ? <Cloudinaries toggle={toggle} setToggle={setToggle}/> : <p>マップを表示するには上のボタンを押下してください。</p>}
+        {toggle ? <Cloudinaries toggle={toggle} setToggle={setToggle}/> : <p>マップを表示するには上のボタンをクリックしてください。※現在β版</p>} */}
         
         <Footer/>
     </Layout>
