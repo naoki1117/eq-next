@@ -9,7 +9,7 @@ const Information :NextPage = () => {
     <Layout title='information'>
         <Header/>
         <h1 className='inline'>アーキテクチャー</h1>
-        <h2 className='border-b-2 border-gradient-to-r from-blue-500'>フロントエンド</h2>
+        <h2 className='border-b-2 border-red-300'>フロントエンド</h2>
         <ul>
             <li>nextjs&typescript</li>
             <li>tailwindcss</li>
