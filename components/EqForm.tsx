@@ -4,6 +4,7 @@ import { IconDatabase } from '@tabler/icons'
 import useStore from '../store'
 import { useMutateEq } from '../hooks/useMutateEqs'
 import { ChangeEvent } from 'react'
+import { OutPut } from './OutPut'
 
 export const EqForm = () => {
     const {editedEq} = useStore()
@@ -79,6 +80,7 @@ export const EqForm = () => {
             {editedEq.id === 0 ? "作成" : "更新"}
 
         </Button>
+        <OutPut/>
       
       </form>
     </div>
