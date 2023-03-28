@@ -15,14 +15,14 @@ export const OutPut = () => {
         const worksheet = workbook.getWorksheet("sheet1");
         console.log(eqs)
         worksheet.columns = [
-          { header: "ID", key: "id" },
+          { header: "登録ID", key: "id" },
           { header: "名称", key: "name" },
           { header: "所在地(フロア)", key: "category" },
           { header: "数量", key: "quantity" },
           { header: "単位", key: "description" },
           { header: "作成日時", key: "createdAt" },
           { header: "最新更新日時", key: "updatedAt" },
-          { header: "ユーザーId", key: "userId" },
+          { header: "登録ユーザーId", key: "userId" },
 
         ];
         
@@ -58,7 +58,7 @@ export const OutPut = () => {
         a.remove();
       }
   return (
-    <div>
+    <div className='mt-5'>
         <button onClick={(e) => handlerClickDownloadButton(e, "xlsx")}>
           Excelダウンロード
         </button>
