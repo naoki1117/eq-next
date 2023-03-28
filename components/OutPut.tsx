@@ -17,7 +17,13 @@ export const OutPut = () => {
         worksheet.columns = [
           { header: "ID", key: "id" },
           { header: "名称", key: "name" },
-          { header: "作成日時", key: "createdAt" }
+          { header: "所在地(フロア)", key: "category" },
+          { header: "数量", key: "quantity" },
+          { header: "単位", key: "description" },
+          { header: "作成日時", key: "createdAt" },
+          { header: "最新更新日時", key: "updatedAt" },
+          { header: "ユーザーId", key: "userId" },
+
         ];
         
         
@@ -27,7 +33,12 @@ export const OutPut = () => {
                 {
                     id:eq.id,
                     name:eq.name,
-                    createdAt:eq.createdAt
+                    category:eq.category,
+                    quantity:eq.quantity,
+                    description:eq.description,
+                    createdAt:eq.createdAt,
+                    updatedAt:eq.updatedAt,
+                    userId:eq.userId
                 }
 
             ]);
