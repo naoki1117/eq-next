@@ -53,7 +53,7 @@ export const OutPut = () => {
         const url = window.URL.createObjectURL(blob);
         const a = document.createElement("a");
         a.href = url;
-        a.download = "sampleData." + format; //フォーマットによってファイル拡張子を変えている
+        a.download = "outputData." + format; //フォーマットによってファイル拡張子を変えている
         a.click();
         a.remove();
       }
