@@ -12,7 +12,7 @@ export const Cloudinaries = () => {
     const myImage = cld.image('p_crwtbg'); 
 
     // Resize to 250 x 250 pixels using the 'fill' crop mode.
-    myImage.resize(fill().width(250).height(250));
+    myImage.resize(fill().width(150).height(150));
 
     // Render the image in a React component.
     return (
