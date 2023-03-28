@@ -1,17 +1,18 @@
 import React from 'react'
 import ExcelJS from "exceljs"
+import { useQueryEqs } from '../hooks/useQueryEqs';
 
 export const OutPut = () => {
+    const {data: eqs, status} =useQueryEqs()
     const handlerClickDownloadButton = async (
         e: React.MouseEvent<HTMLButtonElement, MouseEvent>,
         format: "xlsx" | "csv"
       ) => {
         e.preventDefault();
-    
         const workbook = new ExcelJS.Workbook();
         workbook.addWorksheet("sheet1");
         const worksheet = workbook.getWorksheet("sheet1");
-        
+        console.log(eqs)
         worksheet.columns = [
           { header: "ID", key: "id" },
           { header: "作成日時", key: "createdAt" },
