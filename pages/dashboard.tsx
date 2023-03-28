@@ -27,7 +27,7 @@ const Dashboard:NextPage = () => {
     <Layout title='eqms'>
         <Button
             onClick={logout}
-            className="text-end"
+            className="fixed top-0 left-3"
             >
               ログアウト
         </Button>
