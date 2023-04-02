@@ -46,7 +46,7 @@ export const EqItem:FC<Omit<Equipment, "userId">> = ({id,name,category,descripti
         <strong className='text-lg'>{name}</strong> &emsp; 数量:<strong className='text-lg'>{quantity}</strong>{description}
         
         <p className='mt-0 mb-0 text-sm'><span>アラート数量: <strong className='text-lg text-red-500'>{limitCount}</strong>{description}</span>  &emsp; 所在フロア:{category}</p>
-        {Number(quantity) <= Number(limitCount) ? <div className='text-red-500 items-center'><AlertCircle size={24} className="items-center"/>数量が下限を下回りました!</div> : ""}
+        {Number(quantity) <= Number(limitCount) ? <div className='text-red-500'><AlertCircle size={24} className="float-left"/>数量が下限を下回りました!</div> : ""}
         <p className='text-sm mt-0 mb-0'>
             登録日:{format(new Date(createdAt),"yyyy-MM-dd HH:mm:ss")}
             &emsp;     
