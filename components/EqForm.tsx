@@ -65,7 +65,7 @@ export const EqForm = () => {
             
         />
         <TextInput
-            label="リミットカウント"
+            label="アラート数量"
             value={editedEq.limitCount || ""}
             placeholder="アラート数量を入力"
             className='w-64'
