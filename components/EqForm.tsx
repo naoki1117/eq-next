@@ -74,8 +74,7 @@ export const EqForm = () => {
         />
         <TextInput
             className='w-64'
-            label="単位"
-            mt="md"        
+            label="単位"        
             placeholder='単位を入力'
             value={editedEq.description || ""}
             onChange={(e) => update({...editedEq,description: e.target.value})}

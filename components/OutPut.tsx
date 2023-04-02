@@ -22,9 +22,11 @@ export const OutPut = () => {
           { header: "所在地(フロア)", key: "category" },
           { header: "数量", key: "quantity" },
           { header: "単位", key: "description" },
+          { header: "下限設定値", key: "limitCount"},
           { header: "作成日時", key: "createdAt" },
           { header: "最新更新日時", key: "updatedAt" },
           { header: "登録ユーザーId", key: "userId" },
+          
 
         ];
         
@@ -38,6 +40,7 @@ export const OutPut = () => {
                     category:eq.category,
                     quantity:eq.quantity,
                     description:eq.description,
+                    limitCount: eq.limitCount,
                     createdAt:eq.createdAt,
                     updatedAt:eq.updatedAt,
                     userId:eq.userId
