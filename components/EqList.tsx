@@ -7,7 +7,7 @@ import { AugmentedReality } from 'tabler-icons-react';
 
 export const EqList = () => {
     const {data: eqs, status} =useQueryEqs()
-    if (status === "loading") return <Loader my="lg" color="cyan"/>
+    if (status === "loading") return <Loader my="lg" color="cyan" className='top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'/>
   return (
     <div className='col-span-3'>
         <List
