@@ -15,6 +15,7 @@ model Equipment {
   description String?
   userId      Int
   category    String
+  limtCount String?
   quantity    String
   User        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 }

@@ -7,5 +7,6 @@ export type EditedEq = {
   name: string
   category: string
   description?: string | null
+  limitCount?: string | null
   quantity: string
 }

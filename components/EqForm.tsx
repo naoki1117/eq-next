@@ -63,6 +63,14 @@ export const EqForm = () => {
             
         />
         <TextInput
+            label="リミットカウント"
+            value={editedEq.limitCount || ""}
+            placeholder="アラート数量を入力"
+            className='w-64'
+            onChange={(e) => update({...editedEq,limitCount: e.target.value})}
+            
+        />
+        <TextInput
             className='w-64'
             label="単位"
             mt="md"        

@@ -5,8 +5,9 @@ import { Equipment } from '@prisma/client'
 import useStore from '../store'
 import { useMutateEq } from '../hooks/useMutateEqs'
 import { format } from "date-fns"
+import { AlertCircle } from 'tabler-icons-react'
 
-export const EqItem:FC<Omit<Equipment, "userId">> = ({id,name,category,description,createdAt,updatedAt,quantity}) => {
+export const EqItem:FC<Omit<Equipment, "userId">> = ({id,name,category,description,createdAt,updatedAt,quantity,limitCount}) => {
     const update = useStore((state) => state.updateEditedEq)
     const {deleteEqMutation} =useMutateEq()
     const [toggle,setToggle] = useState(false)
@@ -22,7 +23,8 @@ export const EqItem:FC<Omit<Equipment, "userId">> = ({id,name,category,descripti
                     name,
                     category,
                     description,
-                    quantity
+                    quantity,
+                    limitCount
                 })
 
             }}
@@ -42,7 +44,9 @@ export const EqItem:FC<Omit<Equipment, "userId">> = ({id,name,category,descripti
       </div>
       <span onClick={() => setToggle(!toggle)} className="cursor-pointer">
         <strong>{name}</strong> &emsp; 数量:{quantity}{description}
-        <p>所在フロア:{category}</p>
+        
+        <p><span>アラート数量: <strong className='text-lg text-red-500'>{limitCount}</strong>{description}</span>  &emsp; 所在フロア:{category}</p>
+        {Number(quantity) <= Number(limitCount) ? <div className='text-red-500'><AlertCircle size={16}/>数量が下限を下回りました!</div> : ""}
         <p>
             登録日:{format(new Date(createdAt),"yyyy-MM-dd HH:mm:ss")}
             &emsp;     

@@ -8,7 +8,14 @@ type State = {
 }
 
 const useStore = create<State>((set) => ({
-  editedEq: { id: 0, name: '', category: '', description: '', quantity: '' },
+  editedEq: {
+    id: 0,
+    name: '',
+    category: '',
+    description: '',
+    quantity: '',
+    limitCount: '',
+  },
   updateEditedEq: (payload) =>
     set({
       editedEq: {
@@ -17,6 +24,7 @@ const useStore = create<State>((set) => ({
         category: payload.category,
         description: payload.description,
         quantity: payload.quantity,
+        limitCount: payload.limitCount,
       },
     }),
   resetEditedEq: () =>
@@ -27,6 +35,7 @@ const useStore = create<State>((set) => ({
         category: '',
         description: '',
         quantity: '',
+        limitCount: '',
       },
     }),
 }))

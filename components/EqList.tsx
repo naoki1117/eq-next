@@ -33,6 +33,7 @@ export const EqList = () => {
                     createdAt={eq.createdAt}
                     updatedAt={eq.updatedAt}
                     quantity={eq.quantity}
+                    limitCount={eq.limitCount}
                 />
             ))}
         </List>
