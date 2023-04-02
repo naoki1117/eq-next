@@ -17,7 +17,8 @@ export const EqForm = () => {
                 name: editedEq.name,
                 category: editedEq.category,
                 description: editedEq.description,
-                quantity: editedEq.quantity
+                quantity: editedEq.quantity,
+                limitCount: editedEq.limitCount
             })
         }
         else {
@@ -26,7 +27,8 @@ export const EqForm = () => {
                 name: editedEq.name,
                 category:editedEq.category,
                 description:editedEq.description,
-                quantity: editedEq.quantity
+                quantity: editedEq.quantity,
+                limitCount: editedEq.limitCount
             })
             alert("更新が完了しました。")
         }
